@@ -60,34 +60,6 @@
     }
 
     /*---------------ANIMACION BORDE MULTICOLOR!-------------------*/
-.animated-border {
-  position: relative;
-  z-index: 0;
-}
-
-.animated-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px; /* grosor del borde */
-  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-  background-size: 400% 400%;
-  border-radius: 8px;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
-  animation: animatedGradient 5s linear infinite;
-  z-index: -1;
-}
-
-@keyframes animatedGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 
     
   </style>
@@ -96,7 +68,7 @@
 
   <div class="calendar">
     <!-- Día 1 -->
-    <a href="https://www.youtube.com/@Specter_N" class="day animated-border">
+    <a href="https://www.youtube.com/@Specter_N" class="day">
       <div class="day-number">1</div>
       <img src="https://i.imgur.com/GiUtaEQ.png" alt="Imagen Día 1">
       <div class="mark-x">✘</div>
