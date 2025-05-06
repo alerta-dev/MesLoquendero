@@ -60,58 +60,6 @@
     }
 
     /*---------------ANIMACION BORDE MULTICOLOR!-------------------*/
-.animated-border {
-  position: relative;
-  padding: 2rem;
-  border-radius: 16px;
-  background: #fff;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.animated-border::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  background: conic-gradient(
-    from 0deg,
-    #ff0000,
-    #ffa500,
-    #ffff00,
-    #00ff00,
-    #0000ff,
-    #4b0082,
-    #ee82ee,
-    #ff0000
-  );
-  z-index: -1;
-  border-radius: 18px;
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  background: white;
-  border-radius: 14px;
-  z-index: -1;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
 
 
     
@@ -121,7 +69,6 @@
 
   <div class="calendar">
     <!-- Día 1 -->
-    <div class="animated-border">
     <a href="https://www.youtube.com/@Specter_N" class="day">
       <div class="day-number">1</div>
       <img src="https://i.imgur.com/GiUtaEQ.png" alt="Imagen Día 1">
@@ -129,7 +76,6 @@
       <!-- Para marcar un día pasado, descomenta la línea de abajo -->
       <!-- <div class="mark-x">✘</div> -->
     </a>
-    </div>  
     <!-- Día 2 -->
     <a href="https://ejemplo.com/dia2" class="day">
       <div class="day-number">2</div>
