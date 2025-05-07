@@ -9,9 +9,12 @@
       font-family: sans-serif;
       margin: 0;
       background-image: url('https://i.imgur.com/p3VOaOm.png'); /* https://i.imgur.com/V2q8SCt.png Ruta de la imagen */
-      background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
-      background-position: center; /* Centra la imagen */
-      background-repeat: no-repeat; /* Evita que se repita */
+      background-size: cover;
+  background-position: top center; /* Alinea desde arriba */
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Asegura que se mueva con el scroll */
+  min-height: 100vh; /* Asegura que tenga altura mínima */
+  margin: 0;
       justify-content: center;
       align-items: center;
       text-align: center;
