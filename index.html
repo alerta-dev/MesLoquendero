@@ -130,6 +130,23 @@
   font-weight: bold;
   transform: rotateY(180deg);
 }
+    /*---------------REPRODUCTOR!-------------------*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 560px; /* Tamaño máximo del video */
+  margin: 0 auto; /* Esto lo centra horizontalmente */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
     
   </style>
@@ -538,5 +555,15 @@
     <p class="subtitulo">El mes loquendero es un evento en donde loquenderos concordamos subir un video durante todo Julio. Todos pueden participar subiendo cualquier tipo de video, solo unete al discord y reporta tu video y te asignaremos un día  <a href="https://ejemplo.com">Discord</a></p>
    
   </header>
+  
+  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/5JOeM7WjIxk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 </body>
 </html>
